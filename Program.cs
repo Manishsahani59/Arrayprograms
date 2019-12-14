@@ -79,6 +79,10 @@ namespace Arrayprograms
                         SubArrayWithHighestProduct subarry = new SubArrayWithHighestProduct();
                         subarry.HighestMultiplication();
                          break;
+                    case 14:
+                           count Count = new count();
+                            Count.count1to100();
+                        break;
                     default:
                         Console.WriteLine("Entered Wrong Option");
                         break;

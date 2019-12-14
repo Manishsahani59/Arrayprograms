@@ -16,10 +16,11 @@ namespace Arrayprograms
             Console.WriteLine("Enter the Element Now --->");
 
              string path= @"D:\path.txt";
+             string path1= @"D:\demo.txt";
              string value=File.ReadAllText(path);
             //    Console.WriteLine(value);  
 
-            StreamWriter sw = new StreamWriter(path);
+            //StreamWriter sw = new StreamWriter(path1);
             /* if Want sort Strng then use this array*/
             string[] arr = value.Split(" ");
 
@@ -44,11 +45,8 @@ namespace Arrayprograms
             Console.WriteLine("Your Array is After Sorting --->");
             Utility.bubblesort(arr1, size);
 
-            for (int i = 0; i < arr1.Length; i++)
-            {
-                sw.WriteLine(arr[i]);
-            }
-            Console.WriteLine("Your Saved Successfully in File");
+          
+          
             Console.WriteLine("Enter the element want to serch");
             int key = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine(Utility.BinarySearch(arr1, key)); 
